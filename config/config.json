@@ -1,0 +1,18 @@
+{
+  "development": {
+    "database": "feastly_api_development",
+    "dialect": "postgres",
+    "username": "postgres"
+  },
+  "test": {
+    "database": "feastly_api_test",
+    "dialect" : "postgres"
+  },
+  "production": {
+    "use_env_variable":"DATABASE_URL",
+    "dialect": "postgres",
+    "dialectOptions": {
+      "ssl": true
+    }
+  }
+}

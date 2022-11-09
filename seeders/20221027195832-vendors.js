@@ -1,9 +1,9 @@
 'use strict';
 const vendors=[
-  {username:"JacksJerkChicken",password: "abc123",createdAt:new Date(),updatedAt: new Date()},
-  {username:"ManushsMashedPotatoes",password: "feastlyPM",createdAt:new Date(),updatedAt: new Date()},
-  {username:"ConnorsCookies",password: "DBDev",createdAt:new Date(),updatedAt: new Date()},
-  {username:"BensBiriyani",password: "FrontendDev",createdAt:new Date(),updatedAt: new Date()},
+  {name:"JacksJerkChicken",phoneNum:"647-537-9333" ,password: "abc123",createdAt:new Date(),updatedAt: new Date()},
+  {name:"ManushsMashedPotatoes",phoneNum:"647-537-1234", password: "feastlyPM",createdAt:new Date(),updatedAt: new Date()},
+  {name:"ConnorsCookies",phoneNum:"647-537-5678",password: "DBDev",createdAt:new Date(),updatedAt: new Date()},
+  {name:"BensBiriyani",phoneNum:"647-537-9101",password: "FrontendDev",createdAt:new Date(),updatedAt: new Date()},
 ]
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {

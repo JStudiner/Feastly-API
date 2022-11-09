@@ -3,6 +3,7 @@
     "database": "feastly_api_development",
     "dialect": "postgres",
     "username": "postgres"
+    
   },
   "test": {
     "database": "feastly_api_test",

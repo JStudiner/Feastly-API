@@ -1,9 +1,9 @@
 'use strict';
 const users=[
-  {username:"Jack",password: "abc123",createdAt:new Date(),updatedAt: new Date()},
-  {username:"Manush",password: "feastlyPM",createdAt:new Date(),updatedAt: new Date()},
-  {username:"Connor",password: "DBDev",createdAt:new Date(),updatedAt: new Date()},
-  {username:"Ben",password: "FrontendDev",createdAt:new Date(),updatedAt: new Date()},
+  {name:"Jack",phoneNum:"647-537-9333" ,password: "abc123",createdAt:new Date(),updatedAt: new Date()},
+  {name:"Manush",phoneNum:"647-537-9111" ,password: "feastlyPM",createdAt:new Date(),updatedAt: new Date()},
+  {name:"Connor",phoneNum:"647-537-1234" ,password: "DBDev",createdAt:new Date(),updatedAt: new Date()},
+  {name:"Ben",phoneNum:"647-537-0000" ,password: "FrontendDev",createdAt:new Date(),updatedAt: new Date()},
 ]
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {

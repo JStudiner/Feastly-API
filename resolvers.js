@@ -22,6 +22,21 @@ const resolvers={
                 order: sequelize.random()
             })
             return vendor
+        },
+        async getVendorByID(_,{vendorID},{models}){
+            return models.Vendors.findByPk(vendorID)
+        },
+        async getAllStorefronts(root,args,{models}){
+            return models.Storefront.findAll()
+        },
+        async getProductByStorefront(root,{storefrontID},{models}){
+            return models.Product.findAll({where:{storefrontID:storefrontID}})
+        },
+        async getVendorByPhoneNum(root,{phoneNum},{models}){
+            return models.Vendors.findOne({where:{phoneNum:phoneNum}})
+        },
+        async getUserByPhoneNum(root,{phoneNum},{models}){
+            return models.Users.findOne({where:{phoneNum:phoneNum}})
         }
     },
     Mutation:{
@@ -62,7 +77,16 @@ const resolvers={
                 phoneNum,
                 password
             })
-        }
+        },
+        async createStorefront(root,{name,description,longitude,latitude,hours,tag1,tag2,tag3,vendorID},{models}){
+            return models.Storefront.create({
+                name,description,longitude,latitude,hours,tag1,tag2,tag3,vendorID
+            })
+        },async createProduct(root,{name,description,imageURL,storefrontID},{models}){
+            return models.Product.create({
+                name,description,imageURL,storefrontID
+            })
+        },
     }
 }
 module.exports=resolvers

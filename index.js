@@ -22,6 +22,6 @@ models.sequelize.authenticate();
 models.sequelize.sync();
 
 app.listen(port,() => {
-  console.log(`Server running at http:localhost:${port}${server.graphqlPath}`)
+  console.log(`Server running at http:localhost:${port}/graphql`)
 })
 //import

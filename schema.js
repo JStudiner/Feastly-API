@@ -27,6 +27,7 @@ type Storefront{
 type Product{
     id: Int!
     name:String!
+    price:Float!
     description:String!
     imageURL:String!
     storefrontID:Int!

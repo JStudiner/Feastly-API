@@ -82,9 +82,9 @@ const resolvers={
             return models.Storefront.create({
                 name,description,longitude,latitude,hours,tag1,tag2,tag3,vendorID
             })
-        },async createProduct(root,{name,description,imageURL,storefrontID},{models}){
+        },async createProduct(root,{name,price,description,imageURL,storefrontID},{models}){
             return models.Product.create({
-                name,description,imageURL,storefrontID
+                name,price,description,imageURL,storefrontID
             })
         },
     }

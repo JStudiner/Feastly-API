@@ -10,7 +10,7 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       cost: {
-        type: Sequelize.DOUBLE
+        type: Sequelize.STRING
       },
       current: {
         type: Sequelize.BOOLEAN

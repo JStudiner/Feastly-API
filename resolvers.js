@@ -3,6 +3,7 @@ const { sequelize } = require("./models")
 
 const resolvers={
     Query:{
+       
         async getUser(root,{id},{models}){
             return models.Users.findByPk(id)
         },
@@ -86,7 +87,12 @@ const resolvers={
             return models.Product.create({
                 name,price,description,imageURL,storefrontID
             })
-        },
+        },async createOrder(root,{cost,current,userID,storefrontID},{models}){
+
+            return models.Order.create({
+                cost,current,userID,storefrontID
+            })
+        }
     }
 }
 module.exports=resolvers
